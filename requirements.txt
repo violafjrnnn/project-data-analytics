@@ -1,5 +1,6 @@
-altair
-numpy
-pandas
-pydeck
-streamlit
+Babel == 2.13.0
+matplotlib == 3.8.0
+numpy == 1.26.1
+pandas == 2.1.1
+seaborn == 0.13.0
+streamlit == 1.27.2
