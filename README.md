@@ -2,11 +2,8 @@
 
 ## E-Commerce Dashboard
 
-## Struktur Direktori
-
-- **/dataset**: Direktori ini berisi data yang digunakan dalam proyek, dalam format .csv .
-- **/streamlit**: Direktori ini berisi main.py yang digunakan untuk membuat dashboard hasil analisis data.
-- **Proyek_Analisis_Data.ipynb**: File ini yang digunakan untuk melakukan analisis data.
+## Dataset
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
 ## Setup environment
 ```
