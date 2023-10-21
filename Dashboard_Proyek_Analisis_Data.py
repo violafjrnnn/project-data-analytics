@@ -60,7 +60,7 @@ def create_order_status(df):
 
     return order_status_df, most_common_status
 
-all_df = pd.read_csv("Project-data-analytics/Dashboard/all_data.csv")
+all_df = pd.read_csv("https://drive.google.com/file/d/17NoEaMComQo4X6U8tdvLZdCsmeq9MOzs/view?usp=sharing")
 
 datetime_cols = ["order_approved_at", "order_delivered_carrier_date", "order_delivered_customer_date", "order_estimated_delivery_date", "order_purchase_timestamp", "shipping_limit_date"]
 all_df.sort_values(by="order_approved_at", inplace=True)
@@ -77,7 +77,7 @@ with st.sidebar:
     st.title("Viola Fajrin")
 
     # Logo Image
-    st.image("Project-data-analytics/Dashboard/png-transparent-online-shopping-shopping-cart-logo-e-commerce-market-blue-angle-company.png")
+    st.image("https://drive.google.com/file/d/17NoEaMComQo4X6U8tdvLZdCsmeq9MOzs/view?usp=sharing")
 
     # Date Range
     start_date, end_date = st.date_input(
