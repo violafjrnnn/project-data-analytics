@@ -60,7 +60,7 @@ def create_order_status(df):
 
     return order_status_df, most_common_status
 
-all_df = pd.read_csv("C:/Users/Viola/Documents/Dicoding/Project-data-analytics/all_data.csv")
+all_df = pd.read_csv("Project-data-analytics/Dashboard/all_data.csv")
 
 datetime_cols = ["order_approved_at", "order_delivered_carrier_date", "order_delivered_customer_date", "order_estimated_delivery_date", "order_purchase_timestamp", "shipping_limit_date"]
 all_df.sort_values(by="order_approved_at", inplace=True)
@@ -77,7 +77,7 @@ with st.sidebar:
     st.title("Viola Fajrin")
 
     # Logo Image
-    st.image("Project-data-analytics/png-transparent-online-shopping-shopping-cart-logo-e-commerce-market-blue-angle-company.png")
+    st.image("Project-data-analytics/Dashboard/png-transparent-online-shopping-shopping-cart-logo-e-commerce-market-blue-angle-company.png")
 
     # Date Range
     start_date, end_date = st.date_input(
@@ -140,7 +140,7 @@ colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
 sns.barplot(x="product_count", y="product_category_name_english", data=sum_order_items_df.head(5), palette=colors, ax=ax[0])
 ax[0].set_ylabel(None)
 ax[0].set_xlabel("Number of Sales", fontsize=30)
-ax[0].set_title("Produk paling banyak terjual", loc="center", fontsize=50)
+ax[0].set_title("Best Performing Product", loc="center", fontsize=50)
 ax[0].tick_params(axis ='y', labelsize=35)
 ax[0].tick_params(axis ='x', labelsize=30)
 
@@ -150,7 +150,7 @@ ax[1].set_xlabel("Number of Sales", fontsize=30)
 ax[1].invert_xaxis()
 ax[1].yaxis.set_label_position("right")
 ax[1].yaxis.tick_right()
-ax[1].set_title("Produk paling sedikit terjual", loc="center", fontsize=50)
+ax[1].set_title("Worst Performing Product", loc="center", fontsize=50)
 ax[1].tick_params(axis='y', labelsize=35)
 ax[1].tick_params(axis='x', labelsize=30)
 
